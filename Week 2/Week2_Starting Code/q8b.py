@@ -8,6 +8,7 @@ def calculate_tax_2(income):
     # Modify the code below to return the right amount of tax.
     tax_payable = (max((income - 20000) * 0.02, 0))
 
+
     return tax_payable
 
 
