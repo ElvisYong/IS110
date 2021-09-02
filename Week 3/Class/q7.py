@@ -13,7 +13,7 @@ def calculate_total_amount(brand, num_boxes):
         return (55.40 * num_boxes) - discount
     elif brand == "Man Fu Yuan":
         discount = (59.60 * num_boxes) * get_discount_rate(num_boxes)
-        return (59.60 - discount) - discount
+        return (59.60 * num_boxes) - discount
     else:
       return "No such brand"
 
