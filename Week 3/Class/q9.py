@@ -9,4 +9,14 @@ ten_cents = int(change // 0.1)
 change = change % 0.1
 one_cents = int(change // 0.01)
 
-print(f"{ten_dollar} ten-dollar bills, {two_dollar} two-dollar bills, {one_dollar} one-dollar bills, {ten_cents} ten-cents coins, and {one_cents} one-cents coins ")
+
+if ten_dollar > 0:
+    print("$10 dollar bills:", ten_dollar)
+if two_dollar > 0:
+    print("$2 dollar bills:", two_dollar)
+if one_dollar > 0:
+    print("$1 dollar bills:", one_dollar)
+if ten_cents > 0:
+    print("10 cents:", ten_cents)
+if one_cents > 0:
+    print("1 cent:", one_cents)
