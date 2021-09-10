@@ -11,10 +11,13 @@ def count_a(text):
     word “a” occurs, both its previous character and its next character are a space.
     """
     # Modify the code below to return the number of "a" occurrences.
+    count = 0
+    for i, char in enumerate(text):
+        if char == 'a':
+            if text[i-1] == ' ' and text[i+1] == ' ':
+                count += 1
 
-
-
-    return 0
+    return count
 # ################################################################################
 # Q7b 
 def count_an(text):
@@ -26,7 +29,11 @@ def count_an(text):
     word “an” occurs, its previous character and its next character are both a space.
     """
     # Modify the code below to return the number of "an" occurrences.
+    count = 0
+    for i, char in enumerate(text):
+        if char == 'a':
+            if text[i-1] == ' ' and text[i+1] == 'n':
+                if text[i+2] == ' ':
+                    count += 1
 
-
-
-    return 0
+    return count
