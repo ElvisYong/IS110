@@ -2,7 +2,10 @@
 ## b)
 # Write your code below:
 ##############################################################
-
+def all_older_than(age_list, n):
+    if all(x > n for x in age_list):
+        return True
+    return False
 
 
 

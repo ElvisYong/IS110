@@ -2,9 +2,15 @@
 ## c)
 # Write your code below:
 ##############################################################
-
-
-
+def get_sum_multiples(int_list, n):
+    """
+    Returns the sum of all the multiples of the numbers in int_list
+    """
+    sum = 0
+    for i in int_list:
+        if i % n == 0:
+            sum += i
+    return sum
 
 
 

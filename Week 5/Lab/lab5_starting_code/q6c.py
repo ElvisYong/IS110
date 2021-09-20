@@ -2,6 +2,16 @@
 ## c)
 # Write your code below:
 ##############################################################
+def get_non_common_strings(str_list1, str_list2):
+    res = []
+    for i in str_list1:
+        if i not in str_list2:
+            res.append(i)
+    
+    for i in str_list2:
+        if i not in str_list1:
+            res.append(i)
+    return res
 
 
 

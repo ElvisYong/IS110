@@ -2,6 +2,13 @@
 ## a)
 # Write your code below:
 ##############################################################
+def calculate_total_price(item_list):
+    total_price = 0
+    for i in item_list:
+        total_price += i[1] * i[2]
+    return total_price
+       
+
 
 
 

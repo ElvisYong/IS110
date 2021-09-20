@@ -2,10 +2,16 @@
 ## b)
 # Write your code below:
 ##############################################################
-
-
-
-
+def get_larger_numbers(num_list1, num_list2):
+    """
+    This function takes two lists of numbers as arguments and returns a
+    list of the larger numbers between the two lists.
+    """
+    larger_numbers = []
+    for i in num_list1:
+        if all(i > j for j in num_list2):
+            larger_numbers.append(i)
+    return larger_numbers
 
 
 

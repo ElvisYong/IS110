@@ -2,7 +2,35 @@
 ## d)
 # Write your code below:
 ##############################################################
+def is_prime(num):
+    """
+    This function takes a number and returns True if the number is prime,
+    False otherwise.
+    :param num: A number
+    :return: True if the number is prime, False otherwise
+    """
+    if num == 1:
+        return False
+    for i in range(2, num):
+        if num % i == 0:
+            return False
+    return True
 
+def get_prime_numbers(num_list, sep = " "):
+    """
+    This function takes a list of numbers and returns a list of prime numbers.
+    :param num_list: A list of numbers
+    :param sep: A separator between numbers
+    :return: A list of prime numbers
+    """
+    prime_list = ''
+    for i, num in enumerate(num_list):
+        if is_prime(num):
+            if prime_list == '':
+                primte_list = str(num)
+            else:
+                prime_list += sep + str(num)
+    return prime_list
 
 
 

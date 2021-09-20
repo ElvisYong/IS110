@@ -2,9 +2,12 @@
 ## a)
 # Write your code below:
 ##############################################################
-
-
-
+def get_all_combinations(str_list, num_list):
+    res = []
+    for s in str_list:
+        for n in num_list:
+            res.append((s, n))
+    return res
 
 
 

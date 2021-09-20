@@ -15,7 +15,16 @@ TAX_INFO = [
 
 # Write your code below:
 ##############################################################
-
+def calculate_tax(income):
+    tax = 0
+    for i, t in enumerate(TAX_INFO):
+        if i == len(TAX_INFO) - 1:
+            tax = ((income - t[0]) * t[2]) + t[1]
+            break
+        elif income > TAX_INFO[i][0] and income <= TAX_INFO[i+1][0]:
+            tax = ((income - t[0]) * t[2]) + t[1]
+            break
+    return tax
 
 
 

@@ -2,6 +2,8 @@
 ## e)
 # Write your code below:
 ##############################################################
+def calculate_sums(num_list):
+
 
 
 

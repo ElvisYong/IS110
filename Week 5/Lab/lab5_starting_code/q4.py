@@ -4,8 +4,13 @@ COMMON_WORDS = ['a', 'aa', 'ab', 'abc', 'ability', 'able', 'about', 'above', 'ab
 
 # Write your code below:
 ##############################################################
-
-
+def check_spelling(word):
+    split_word = word.split(' ')
+    spelling_errors = []
+    for i in split_word:
+        if i.lower() not in COMMON_WORDS:
+            spelling_errors.append(i)
+    return spelling_errors
 
 
 

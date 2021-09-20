@@ -2,10 +2,11 @@
 ## b)
 # Write your code below:
 ##############################################################
-
-
-
-
+def get_items(item_list):
+    items = []
+    for i in item_list:
+        items.append(i[0])
+    return items
 
 
 
