@@ -11,7 +11,6 @@ def calculate_sums(num_list):
 
 
 
-
 ##############################################################
 # Test Cases to test your code
 # DO NOT MODIFY THE TEST CODES
