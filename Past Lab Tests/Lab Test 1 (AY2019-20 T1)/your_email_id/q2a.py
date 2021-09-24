@@ -3,4 +3,6 @@
 
 def get_number_of_long_strings(str_list, n):
     # Modify the code below.
-    return None
+    if str_list:
+        return len([i for i in str_list if len(i) > n])
+    return 0

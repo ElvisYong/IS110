@@ -8,5 +8,9 @@ def calculate_entrance_fees_1(n):
     PACKAGE_C = 200
 
     # Modify the code below.
-    return None
+    total_cost = 0
+    max_package_c = n // 2
+    remainder = n % 2
+
+    return (PACKAGE_B * remainder) + (max_package_c * PACKAGE_C)
         
