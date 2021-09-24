@@ -5,7 +5,12 @@
 def mask_out(sentence, banned, substitutes):
     # write your answer between #start and #end
     #start
-    return ''
+    for i, b  in enumerate(banned):
+        if i > len(substitutes) - 1:
+            sentence = sentence.replace(b, substitutes[0])
+        else:
+            sentence = sentence.replace(b, substitutes[i])
+    return sentence
     #end
 
 

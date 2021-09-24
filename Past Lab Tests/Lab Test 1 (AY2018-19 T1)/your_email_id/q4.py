@@ -5,6 +5,51 @@
 def print_dancing_string(sentence, start):
     # write your answer between #start and #end
     #start
+    if start == 'T':
+        for i in sentence[0::4]:
+            print(i, end='   ')
+        print()
+
+        print(' ', end='')
+        for i in sentence[1::2]:
+            print(i, end=' ')
+        print()
+
+        print('  ', end='')
+        for i in sentence[2::4]:
+            print(i, end='   ')
+        print()
+
+    elif start == 'M':
+        print(' ', end='')
+        for i in sentence[1::4]:
+            print(i, end='   ')
+        print()
+
+        for i in sentence[0::2]:
+            print(i, end=' ')
+        print()
+
+        print('  ', end='')
+        for i in sentence[3::4]:
+            print(i, end='   ')
+        print()
+    
+    elif start == 'B':
+        print('  ', end='')
+        for i in sentence[2::4]:
+            print(i, end='   ')
+        print()
+
+        print(' ', end='')
+        for i in sentence[1::2]:
+            print(i, end=' ')
+        print()
+
+        for i in sentence[0::4]:
+            print(i, end='   ')
+        print()
+    #end
     print()
     #end
 

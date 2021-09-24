@@ -5,7 +5,13 @@
 def get_color(code):
     # write your answer between #start and #end
     #start
-    return ''
+    if code.lower() == 'r':
+        return 'Red'
+    elif code.lower() == 'g':
+        return 'Green'
+    elif code.lower() == 'b':
+        return 'Blue'
+    return 'Invalid'
     #end 
 
 
