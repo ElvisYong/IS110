@@ -1,0 +1,5 @@
+Copy and paste your solution code (q1a.py, q1b.py, etc.) into this folder.
+Run q1a_grade.py to grade q1a.
+Similarly, use the other scripts to grade the other questions.
+
+***Important: If you think a different grade should be given for a particular solution of yours, please *email* me at donta@smu.edu.sg, stating clearly the reason (with relevant screen captures). Any request without a proper justification will not be considered. You have until Sat 17 Oct end of day to get back to me about the grading of LT1.
