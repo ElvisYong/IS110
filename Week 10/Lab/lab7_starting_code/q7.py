@@ -28,7 +28,7 @@ for sentence in extracted_words:
         word_len = len(stripped_word)
         mutable_word = list(stripped_word)
 
-        # Only shuffle words more or equals to 5
+        # Only shuffle words more or equals to 4
         if word_len >= 4:
             shuffled = list(range(1, word_len - 1))
             while shuffled == list(range(1, word_len - 1)):
